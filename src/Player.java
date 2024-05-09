@@ -1,9 +1,15 @@
 public class Player {
 
     public int currentValue;
-    public String whatCards;
+
+
+
+    public Card []hand;
+
+
+
     public String playerName;
-    public boolean player;
+    public boolean isPlayer;
     public boolean hit;
     public boolean stay;
 
