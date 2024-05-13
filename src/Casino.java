@@ -1,8 +1,13 @@
+
+import java.util. Scanner;
 public class Casino {
 
     public Card[] deck;
+    public boolean isHit= false; //help us keep track of whether user has chosen to hit or stay
+    public Player p;
 
     public static void main(String[] args) {
+
         Casino c = new Casino();
     }
 
@@ -11,6 +16,20 @@ public class Casino {
         makeDeck();
         shuffle();
         printDeck();
+
+        p = new Player();
+        p.print();
+        Scanner scan = new Scanner (System.in);
+        System.out.println("What is your name?");
+        String userName = scan.nextLine();
+        System.out.println(userName);
+        p.playerName= userName;
+        p.print();
+
+
+
+
+
     }
 
     public void shuffle(){
@@ -48,11 +67,16 @@ public class Casino {
                 deck[count] = new Card(t, s);
                 deck[count].print();
                 count++;
-
-
             }
         }
     }
+    public void deal (){
+        p.hand[0]= deck[0];
+        p.hand[1]= deck[1];
+    }
+
+
+
 }
 
 
