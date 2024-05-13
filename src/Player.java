@@ -13,12 +13,17 @@ public class Player {
         playerName= "Pati";
         isPlayer=true;
         hand= new Card[2];
-
-
     }
 
+
     public void print(){
-        System.out.println("Hi " + playerName+ "! I see that it is  " + isPlayer +" that you are a player." + playerName+ ", you have " + currentValue+" points.");
+        if(isPlayer=true) {
+            System.out.println("Hi " + playerName + "! I see that it is  " + isPlayer + " that you are a player." + playerName + ", you have " + currentValue + " points.");
+        }else{
+            System.out.println("Hi Dealer!!");
+        }
+
+
     }
 
 }

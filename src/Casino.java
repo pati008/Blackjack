@@ -5,6 +5,8 @@ public class Casino {
     public Card[] deck;
     public boolean isHit= false; //help us keep track of whether user has chosen to hit or stay
     public Player p;
+    public Player d;
+
 
     public static void main(String[] args) {
 
@@ -18,6 +20,8 @@ public class Casino {
         printDeck();
 
         p = new Player();
+        p.isPlayer=true;
+        d= new Player();
         p.print();
         Scanner scan = new Scanner (System.in);
         System.out.println("What is your name?");
@@ -25,6 +29,9 @@ public class Casino {
         System.out.println(userName);
         p.playerName= userName;
         p.print();
+        d.print();
+
+
 
 
 
@@ -73,6 +80,11 @@ public class Casino {
     public void deal (){
         p.hand[0]= deck[0];
         p.hand[1]= deck[1];
+
+
+        d.hand[0]= deck[0];
+        d.hand[1]= deck[1];
+
     }
 
 

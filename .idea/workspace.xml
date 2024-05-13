@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7982fce5-5684-422a-9b3f-0fd90f8b9280" name="Changes" comment="hw due 5/11">
+    <list default="true" id="7982fce5-5684-422a-9b3f-0fd90f8b9280" name="Changes" comment="classwork 5/13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Casino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
@@ -76,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715452349949</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="classwork 5/13">
+      <created>1715620165840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715620165840</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +102,7 @@
     <MESSAGE value="Homework due 5/8" />
     <MESSAGE value="added deck shuffles" />
     <MESSAGE value="hw due 5/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw due 5/11" />
+    <MESSAGE value="classwork 5/13" />
+    <option name="LAST_COMMIT_MESSAGE" value="classwork 5/13" />
   </component>
 </project>
