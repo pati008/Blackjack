@@ -18,11 +18,12 @@ public class Casino {
         makeDeck();
         shuffle();
         printDeck();
-
         p = new Player();
         p.isPlayer=true;
         d= new Player();
-        p.print();
+        d.isPlayer=false;
+        deal();
+
         Scanner scan = new Scanner (System.in);
         System.out.println("What is your name?");
         String userName = scan.nextLine();
@@ -30,6 +31,7 @@ public class Casino {
         p.playerName= userName;
         p.print();
         d.print();
+
 
 
 
@@ -81,9 +83,12 @@ public class Casino {
         p.hand[0]= deck[0];
         p.hand[1]= deck[1];
 
+        p.addCard(deck[0]);
+        p.addCard(deck[1]);
 
-        d.hand[0]= deck[0];
-        d.hand[1]= deck[1];
+
+        d.hand[0]= deck[2];
+        d.hand[1]= deck[3];
 
     }
 
