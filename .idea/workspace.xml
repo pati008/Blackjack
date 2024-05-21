@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7982fce5-5684-422a-9b3f-0fd90f8b9280" name="Changes" comment="hw due 5/15">
+    <list default="true" id="7982fce5-5684-422a-9b3f-0fd90f8b9280" name="Changes" comment="classwork 5/15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Casino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715632457954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="classwork 5/15">
+      <created>1715778205753</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715778205754</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,7 +116,8 @@
     <MESSAGE value="hw due 5/11" />
     <MESSAGE value="classwork 5/13" />
     <MESSAGE value="hw due 5/15" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw due 5/15" />
+    <MESSAGE value="classwork 5/15" />
+    <option name="LAST_COMMIT_MESSAGE" value="classwork 5/15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
