@@ -27,14 +27,17 @@ public class Player {
 
         if(isPlayer==true) {
             System.out.println("Hi " + playerName + "! I see that it is  " + isPlayer + " that you are a player." + playerName + ", you have " + currentValue + " points.");
+            for(int i=0; i<hand.length; i++){
+
+                hand[i].print();
+            }
+
         }else{
             System.out.println("Hi Dealer!!");
+            System.out.println("the dealer has"+ hand[0].value + "points");
+            hand[0].print();
         }
 
-        for(int i=0; i<hand.length; i++){
-
-            hand[i].print();
-        }
 
 
     }
@@ -42,8 +45,16 @@ public class Player {
 
 
     public void addCard( Card c){
+        if(numCards>=2){
+            Card[] moreCards=new Card[hand.length+1];
+            for(int i=0; i<2; i++){
+                moreCards[i]=hand[i];
+            }
+            hand=moreCards;
+        }
         hand[numCards]=c;
         numCards= numCards+1;
+        currentValue= currentValue+c.value;
     }
 
 }
