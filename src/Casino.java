@@ -32,43 +32,37 @@ public class Casino {
         p.playerName= userName;
         p.print();
         d.print();
+        String decision= "";
+
+        while(!decision.equals("stand")&&p.currentValue<=21){
 
 
-        System.out.println("Do you want to stand or hit?");
-        String decision = scan.nextLine();
-        if(decision.equals("hit")){
-            isHit = true;
-            p.addCard(deck[numDealtCard]);
-            numDealtCard++;
-            p.print();
+            System.out.println("Do you want to stand or hit?");
+            decision = scan.nextLine();
+            if (decision.equals("hit")) {
+                isHit = true;
+                p.addCard(deck[numDealtCard]);
+                numDealtCard++;
+                p.print();
 
-            System.out.println("You decided to hit.");
-        } else{
-            isHit=false;
-            System.out.println("You decided to stand.");
+                System.out.println("You decided to hit.");
+            } else{
+                isHit = false;
+                System.out.println("You decided to stand.");
+            }
+
+            if (isHit) {
+                p.addCard(deck[numDealtCard]);
+                numDealtCard++;
+
+
+            } else {
+
+
+            }
+
+
         }
-
-        if(isHit){
-            p.addCard(deck [numDealtCard]);
-            numDealtCard++;
-
-
-
-        }else{
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
     }
 
     public void shuffle(){
