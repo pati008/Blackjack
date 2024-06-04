@@ -33,6 +33,7 @@ public class Casino {
         p.print();
         d.print();
         String decision= "";
+        String totalValue="";
 
         while(!decision.equals("stand")&&p.currentValue<=21){
 
@@ -46,20 +47,20 @@ public class Casino {
                 p.print();
 
                 System.out.println("You decided to hit.");
+
             } else{
                 isHit = false;
                 System.out.println("You decided to stand.");
             }
 
-            if (isHit) {
-                p.addCard(deck[numDealtCard]);
-                numDealtCard++;
-
-
-            } else {
-
-
+            System.out.println("Do you want to see your total value?");
+            totalValue=scan.nextLine();
+            if(totalValue.equals("yes")) {
+                printTotalValue();
+            }else {
+                System.out.println("You have decided to do the math");
             }
+
 
 
         }
@@ -119,9 +120,18 @@ public class Casino {
 
     }
 
-
-
+    public void printTotalValue() {
+        int totalValue = 0;
+        for (int i = 0; i < numDealtCard; i++) {
+            totalValue += p.hand[i].value;
+        }
+        System.out.println(p.playerName + "'s total hand value is: " + totalValue);
+    }
 }
+
+
+
+
 
 
 
